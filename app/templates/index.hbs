@@ -1,0 +1,13 @@
+<ul>
+{{#each controller}}
+  <li>{{name}}</li>
+		<table>
+			{{#each dealTotals}}
+				<tr>
+						<td {{action 'select' this.deals}}>{{key}}</td>
+						<td>{{count}}</td>
+					</tr>
+			{{/each}}
+		</table>
+{{/each}}
+</ul>
